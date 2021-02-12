@@ -128,10 +128,10 @@ class ProductItem extends HTMLElement {
       this.shadowRoot.querySelector('.title').innerHTML = newValue;
     } else if (name === 'price') {
       this.shadowRoot.querySelector('.price').innerHTML = '$' + newValue;
-    } else if (name === 'index') {
+    } /*else if (name === 'index') {
       this.shadowRoot.querySelector('button').innerHTML = 
         (localStorage.getItem('cart')[this.getAttribute('index')])? 'Remove from Cart' : 'Add to Cart';
-    }
+    }*/
   }
 }
 
