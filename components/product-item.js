@@ -38,6 +38,7 @@ class ProductItem extends HTMLElement {
       if (button.innerHTML === 'Add to Cart') {
         localStorage.setItem('cart-count', parseInt(localStorage.getItem('cart-count')) + 1); // increment cart count
         document.getElementById('cart-count').innerHTML = parseInt(localStorage.getItem('cart-count')); // update HTML
+        alert('Added to cart!');
         button.innerHTML = 'Remove from Cart';
       } else {
         localStorage.setItem('cart-count', parseInt(localStorage.getItem('cart-count')) - 1); // decrement cart count
